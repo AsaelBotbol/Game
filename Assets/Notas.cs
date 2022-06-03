@@ -8,10 +8,10 @@ public class Notas : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Jugador")
+        if (other.tag=="Player")
         {
             ObjPuntos.GetComponent<Puntos>().puntos += 1;
-            Destroy(gameObject); //https://www.youtube.com/watch?v=9A-kE0Y_R_k
+            Destroy(gameObject);
         }
     }
 
