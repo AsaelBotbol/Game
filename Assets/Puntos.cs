@@ -23,9 +23,10 @@ public class Puntos : MonoBehaviour
         if (puntos >= 10)
         {
             SceneManager.LoadScene("Ganaste");
+            Cursor.lockState = CursorLockMode.None;
         }
 
         //UI
-        textoPuntos.text = puntos + puntos.ToString();
+        textoPuntos.text = puntos + "/10";
     }
 }

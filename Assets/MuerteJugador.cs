@@ -1,24 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class SalirApp : MonoBehaviour
+public class MuerteJugador : MonoBehaviour
 {
-    public void salirJuego()
+    private void OnTriggerEnter(Collider other)
     {
-        Application.Quit();
-        Debug.Log("Salir");
+        if (other.tag == "Enemy")
+        {
+            SceneManager.LoadScene("Perdiste");
+        }
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.lockState = CursorLockMode.None;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
