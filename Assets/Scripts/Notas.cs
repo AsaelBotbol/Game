@@ -5,7 +5,7 @@ using UnityEngine;
 public class Notas : MonoBehaviour
 {
     public GameObject ObjPuntos;
-    public AudioClip papersound;
+   // public AudioClip papersound;
 
 
     private void OnTriggerEnter(Collider other)
@@ -14,19 +14,19 @@ public class Notas : MonoBehaviour
         {
             ObjPuntos.GetComponent<Puntos>().puntos += 1;
 
-            audioNota.clip = papersound;
-            audioNota.Play();
+            //audioNota.clip = papersound;
+            //audioNota.Play();
 
             Destroy(gameObject);
         }
     }
-    AudioSource audioNota;
+    //AudioSource audioNota;
 
     // Start is called before the first frame update
     void Start()
     {
         
-        audioNota = GetComponent<AudioSource>();
+        //audioNota = GetComponent<AudioSource>();
 
     }
 
