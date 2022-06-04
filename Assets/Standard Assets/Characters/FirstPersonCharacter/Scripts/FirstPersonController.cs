@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
+using System.Collections;
+using System.Collections.Generic;
 
 #pragma warning disable 618, 649
 namespace UnityStandardAssets.Characters.FirstPerson
