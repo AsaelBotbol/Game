@@ -2,18 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Notas : MonoBehaviour
+public class JugadorNota : MonoBehaviour
 {
     public GameObject ObjPuntos;
     public AudioClip papersound;
-    AudioSource audioNota;
+    public AudioSource audioNota;
 
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag=="Player")
+        if (other.tag == "Notas")
         {
-            Destroy(gameObject);
+            ObjPuntos.GetComponent<Puntos>().puntos += 1;
+
+            audioNota.clip = papersound;
+            audioNota.Play();
         }
     }
 
@@ -21,8 +24,6 @@ public class Notas : MonoBehaviour
     void Start()
     {
         
-        audioNota = GetComponent<AudioSource>();
-
     }
 
     // Update is called once per frame
