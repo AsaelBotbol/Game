@@ -13,6 +13,10 @@ public class Timer : MonoBehaviour
 
     public GameObject originalObject;
 
+    int i = 2;
+
+    public GameObject Enemy;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,8 +36,16 @@ public class Timer : MonoBehaviour
         {
             textoTimer.text = "El bicho ha sido liberado.";
             Destroy(textoTimer, 6);
-            originalObject.gameObject.SetActive(true);
+            //originalObject.gameObject.SetActive(true);
             tiempo = false;
+
+            while (i > 2)
+            {
+
+                GameObject clon = Instantiate(Enemy, gameObject.transform.position, Quaternion.Euler(0, 0, 0));
+                i -= 1;
+            }
+
         }
         
     }
