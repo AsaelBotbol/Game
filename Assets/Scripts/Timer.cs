@@ -10,24 +10,32 @@ public class Timer : MonoBehaviour
     public Text textoTimer;
 
     public bool existe;
+    
+
 
     // Start is called before the first frame update
     void Start()
     {
-
+        existe = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        timer -= Time.deltaTime;
-        textoTimer.text = "" + timer.ToString();
+        if(existe)
+        {
+            timer -= Time.deltaTime;
+            textoTimer.text = "" + Mathf.CeilToInt(timer);
+        }
+        
 
         if (timer < 0)
         {
             textoTimer.text = "El bicho ha sido liberado.";
 
             Destroy(textoTimer, 6);
+            existe = false;
+
         }
 
     }
