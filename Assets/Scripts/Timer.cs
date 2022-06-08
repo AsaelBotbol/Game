@@ -10,8 +10,8 @@ public class Timer : MonoBehaviour
     public Text textoTimer;
 
     public bool existe;
-    
 
+    public GameObject originalObject;
 
     // Start is called before the first frame update
     void Start()
@@ -27,16 +27,23 @@ public class Timer : MonoBehaviour
             timer -= Time.deltaTime;
             textoTimer.text = "" + Mathf.CeilToInt(timer);
         }
-        
 
         if (timer < 0)
         {
+                                    
             textoTimer.text = "El bicho ha sido liberado.";
 
             Destroy(textoTimer, 6);
+
             existe = false;
 
         }
-
+    }
+    public void InstantiateObject()
+    {
+        if(existe)
+        {
+            Instantiate(originalObject);
+        }
     }
 }
