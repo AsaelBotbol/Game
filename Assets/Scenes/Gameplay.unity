@@ -1680,7 +1680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &487228797
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3300,7 +3300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 10
   textoTimer: {fileID: 750745312}
-  existe: 0
+  tiempo: 0
   originalObject: {fileID: 487228796}
 --- !u!4 &1089436577
 Transform:
