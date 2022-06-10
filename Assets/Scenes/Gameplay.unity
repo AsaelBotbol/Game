@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.43672007, g: 0.484326, b: 0.56457615, a: 1}
+  m_IndirectSpecularColor: {r: 0.43672025, g: 0.48432612, b: 0.56457573, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5282,7 +5282,7 @@ PrefabInstance:
     - target: {fileID: 7034609167351167994, guid: 8ec37d727bb1d164894424ddefb3b58c,
         type: 3}
       propertyPath: m_ObstacleAvoidanceType
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7034609167351167994, guid: 8ec37d727bb1d164894424ddefb3b58c,
         type: 3}
@@ -5302,7 +5302,7 @@ PrefabInstance:
     - target: {fileID: 7034609167351167995, guid: 8ec37d727bb1d164894424ddefb3b58c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -110.96
+      value: 135.37
       objectReference: {fileID: 0}
     - target: {fileID: 7034609167351167995, guid: 8ec37d727bb1d164894424ddefb3b58c,
         type: 3}
