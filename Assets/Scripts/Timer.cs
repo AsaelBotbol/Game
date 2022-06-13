@@ -32,7 +32,7 @@ public class Timer : MonoBehaviour
 
         if (timer < 0)
         {
-            textoTimer.text = "El bicho ha sido liberado.";
+            textoTimer.text = "El enemigo ha sido spawneado, busca las notas antes de que te encuentre.";
             Destroy(textoTimer, 6);
             originalObject.gameObject.SetActive(true);
             tiempo = false;
