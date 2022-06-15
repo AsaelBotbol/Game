@@ -8,7 +8,6 @@ public class Instantiate : MonoBehaviour
     public GameObject objInstantiate;
     public bool Ganaste = true;
 
-    int i = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -24,11 +23,10 @@ public class Instantiate : MonoBehaviour
 
     public void InstantiateObj()
     {
-        while (i == 0)
+        for (int i = 0; i <= 10; i++)
         {
-            Instantiate(objInstantiate);
-            Destroy(objInstantiate,1);
-            i++;
+            GameObject clon = Instantiate(objInstantiate);
+            Destroy(clon,1);
         }
     }
 }
