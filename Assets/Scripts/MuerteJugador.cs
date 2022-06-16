@@ -14,7 +14,7 @@ public class MuerteJugador : MonoBehaviour
             audioScreamer.clip = screamer;
             audioScreamer.Play();
 
-            SceneManager.LoadScene("Perdiste");
+            Invoke(nameof(Perder), 1f);
         }
     }
     AudioSource audioScreamer;
@@ -30,5 +30,10 @@ public class MuerteJugador : MonoBehaviour
     void Update()
     {
 
+    }
+
+    void Perder()
+    {
+        SceneManager.LoadScene("Perdiste");
     }
 }
